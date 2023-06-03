@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+<!--        <import alias="user" type="com.w83ll43.musicplayer.logic.model.User" />-->
+
+        <variable name="user" type="com.w83ll43.musicplayer.logic.model.LocalUser" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+            <!--        app:navigationIcon="@drawable/xui_ic_navigation_back_white"-->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/xui_config_color_white"
+                android:visibility="visible"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="@string/menu_profile"
+                app:titleTextColor="?attr/colorPrimary" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/photo"
+                style="@style/InfoItem.Account"
+                android:layout_height="60dp"
+                app:sLeftTextString="头像">
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/riv_head_pic"
+                    style="@style/RadiusImageView.Circle"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/sRightImgId"
+                    app:srcCompat="@drawable/ic_default_head" />
+
+            </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                style="@style/InfoItem.Account"
+                android:id="@+id/nickname"
+                app:sLeftTextString="昵称" />
+<!--            android:text="@{user.nickname}"-->
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                style="@style/InfoItem.Account"
+                android:id="@+id/userId"
+                app:sLeftTextString="用户ID" />
+<!--            android:text="@{String.valueOf(user.userId)}"-->
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                style="@style/InfoItem.Account"
+                android:id="@+id/listenSongs"
+                app:sLeftTextString="听歌数" />
+<!--            android:text="@{String.valueOf(user.listenSongs)}"-->
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/birthday"
+                style="@style/InfoItem.Account"
+                android:layout_marginTop="20dp"
+                app:sDividerLineType="none"
+                app:sLeftTextString="生日" />
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/area"
+                style="@style/InfoItem.Account"
+                android:layout_marginTop="20dp"
+                app:sLeftTextString="地区" />
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/university"
+                style="@style/InfoItem.Account"
+                app:sDividerLineType="none"
+                app:sLeftTextString="大学" />
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/menu_music"
+                style="@style/InfoItem.Account"
+                app:sDividerLineType="none"
+                app:sLeftTextString="音乐标签" />
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/description"
+                style="@style/InfoItem.Account"
+                app:sDividerLineType="none"
+                app:sLeftTextString="简介" />
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/menu_binding_setting"
+                style="@style/InfoItem.Account"
+                app:sDividerLineType="none"
+                app:sLeftTextString="绑定设置" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

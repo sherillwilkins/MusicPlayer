@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2019 xuexiangjys(xuexiangjys@163.com)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<resources>
+
+    <string-array name="home_titles">
+        <item>@string/menu_find</item>
+        <item>@string/menu_trending</item>
+        <item>@string/menu_profile</item>
+    </string-array>
+
+    <string-array name="grid_titles_entry">
+        <item>美食</item>
+        <item>甜点</item>
+        <item>烧烤</item>
+        <item>夜宵</item>
+        <item>水果</item>
+        <item>药品</item>
+        <item>蔬菜</item>
+        <item>跑腿</item>
+    </string-array>
+
+    <string-array name="settings_list_preference_titles">
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>1小时</item>
+        <item>3小时</item>
+        <item>6小时</item>
+        <item>从不</item>
+    </string-array>
+    <string-array name="settings_list_preference_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <!--  修改这里的图标  -->
+    <array name="grid_icons_entry">
+        <item>@color/app_color_theme_1</item>
+        <item>@color/app_color_theme_2</item>
+        <item>@color/app_color_theme_3</item>
+        <item>@color/app_color_theme_4</item>
+        <item>@color/app_color_theme_5</item>
+        <item>@color/app_color_theme_6</item>
+        <item>@color/app_color_theme_7</item>
+        <item>@color/app_color_theme_8</item>
+    </array>
+
+</resources>

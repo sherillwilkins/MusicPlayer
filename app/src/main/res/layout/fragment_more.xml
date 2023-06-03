@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        app:elevation="0dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:theme="@style/AppTheme.AppBarOverlay">-->
+
+<!--        &lt;!&ndash;        app:navigationIcon="@drawable/xui_ic_navigation_back_white"&ndash;&gt;-->
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            app:title="@string/menu_trending"-->
+<!--            android:id="@+id/toolbar"-->
+<!--            app:popupTheme="@style/AppTheme.PopupOverlay"-->
+<!--            app:titleTextColor="@color/xui_config_color_white"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            android:background="?attr/colorPrimary"-->
+<!--            android:visibility="visible" />-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+    <!-- TabLayout   -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabLayout
+            android:background="@color/xui_config_color_white"
+            android:id="@+id/more_fragment_tab"
+            style="@style/TabLayoutStyle"
+            app:tabMode="fixed"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/xui_actionbar_height" />
+    </androidx.cardview.widget.CardView>
+    <!--  ViewPager，页面填充页  -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/more_fragment_viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

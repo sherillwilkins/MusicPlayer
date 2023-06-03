@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/setting_playlist"
+        android:icon="@drawable/ic_menu_settings"
+        android:title="编辑歌单"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/delete_playlist"
+        android:icon="@drawable/ic_menu_settings"
+        android:title="删除歌单"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/orderBy_playlist"
+        android:icon="@drawable/ic_menu_settings"
+        android:title="排序方式"
+        app:showAsAction="never" />
+</menu>
